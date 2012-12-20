@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_EAsYYDowEeKLqNZylKGZ8w">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_IMMIcDowEeKLqNZylKGZ8w" featurename="commands" parentElementId="com.example.e4.rcp.todo.application">
+    <elements xsi:type="commands:Command" xmi:id="_hQkL4DowEeKLqNZylKGZ8w" elementId="com.example.e4.rcp.todo.contribute.command.openmap" commandName="Open Map"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_qS2EsDowEeKLqNZylKGZ8w" featurename="handlers" parentElementId="com.example.e4.rcp.todo.application">
+    <elements xsi:type="commands:Handler" xmi:id="_v07NMDowEeKLqNZylKGZ8w" elementId="com.example.e4.rcp.todo.contribute.handler.openmap" contributionURI="bundleclass://com.example.e4.rcp.todo.contribute/com.example.e4.rcp.todo.contribute.handler.OpenMapHandler" command="_hQkL4DowEeKLqNZylKGZ8w"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_524aUDowEeKLqNZylKGZ8w" featurename="children" parentElementId="org.eclipse.ui.file.menu">
+    <elements xsi:type="menu:Menu" xmi:id="_NZGcwDoxEeKLqNZylKGZ8w" elementId="com.example.e4.rcp.todo.contribute.menu.map" label="Map">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_TVN14DoxEeKLqNZylKGZ8w" elementId="com.example.e4.rcp.todo.contribute.handledmenuitem.open" label="Open Map" command="_hQkL4DowEeKLqNZylKGZ8w"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_RjUlADoyEeKLqNZylKGZ8w" featurename="children" parentElementId="com.example.e4.rcp.todo.partstack.1">
+    <elements xsi:type="basic:Part" xmi:id="_aZjl4DoyEeKLqNZylKGZ8w" elementId="com.example.e4.rcp.todo.contribute.part.contributePart" contributionURI="bundleclass://com.example.e4.rcp.todo.contribute/com.example.e4.rcp.todo.contribute.part.ContributePart" label="ContributePart" iconURI="platform:/plugin/com.example.e4.rcp.todo.contribute/icons/sample.gif">
+      <menus xmi:id="_KkEaIDvCEeK7Uac0Hh5sXQ" elementId="com.example.e4.rcp.todo.contribute.menu.testmenu" label="Coucou" iconURI="platform:/plugin/com.example.e4.rcp.todo.contribute/icons/sample.gif">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_PP2MwDvCEeK7Uac0Hh5sXQ" elementId="com.example.e4.rcp.todo.contribute.handledmenuitem.0" label="Test" iconURI="platform:/plugin/com.example.e4.rcp.todo.contribute/icons/sample.gif" command="_hQkL4DowEeKLqNZylKGZ8w"/>
+        <children xsi:type="menu:Menu" xmi:id="_ZZcoEDvEEeK7Uac0Hh5sXQ" elementId="com.example.e4.rcp.todo.contribute.menu.1" label="Menu" iconURI="platform:/plugin/com.example.e4.rcp.todo.contribute/icons/save_edit.gif"/>
+      </menus>
+      <menus xmi:id="_zwZOADvBEeK7Uac0Hh5sXQ" elementId="com.example.e4.rcp.todo.contribute.menu.viewmenu" label="New Menu">
+        <tags>ViewMenu</tags>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_aiDEUDvDEeK7Uac0Hh5sXQ" elementId="com.example.e4.rcp.todo.contribute.directmenuitem.0" label="Test" contributionURI="bundleclass://com.example.e4.rcp.todo.contribute/com.example.e4.rcp.todo.contribute.handler.OpenMapHandler"/>
+        <children xsi:type="menu:Menu" xmi:id="_RsBpYDvEEeK7Uac0Hh5sXQ" elementId="com.example.e4.rcp.todo.contribute.menu.0" label="coucou" iconURI="platform:/plugin/com.example.e4.rcp.todo.contribute/icons/save_edit.gif"/>
+      </menus>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_gdHKADvCEeK7Uac0Hh5sXQ" elementId="com.example.e4.rcp.todo.contribute.popupmenu.0" label="fgt">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ruQHEDvCEeK7Uac0Hh5sXQ" elementId="com.example.e4.rcp.todo.contribute.handledmenuitem.1" label="menuItem1" command="_hQkL4DowEeKLqNZylKGZ8w"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
