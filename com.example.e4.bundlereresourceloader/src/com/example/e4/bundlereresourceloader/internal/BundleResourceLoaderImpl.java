@@ -20,5 +20,7 @@ public class BundleResourceLoaderImpl implements IBundleResourceLoader {
 		ImageDescriptor imageDescript = ImageDescriptor.createFromURL(url);
 		return imageDescript.createImage();
 	}
+	
+	//new comment
 
 }
